@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+<body>
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+      <div class="mx-auto">
+        <a class="navbar-brand" href="#">Tracalories</a>
+      </div>
+      <div class="ml-auto">
+        <ul style="display:inline-block; list-style: none;">
+          <li class="pt-3"><a href="#" class="btn btn-outline-danger">Clear All</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Card -->
+  <div class="container mt-4">
+    <div class="card">
+      <div class="card-body">
+        <h3 class="card-title text-center">Add Meal/ Food Item</h3>
+        <form action="">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label for="meal">Meal</label>
+                <input type="text" class="form-control" id="meal">
+                <br>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                  <label for="calories">Calories</label>
+                  <input type="text" class="form-control" id="calories">
+                  <br>
+                </div>
+              </div>
+          </div>
+          <div class="row justify-content-between">
+            <button class="btn btn-info"><i class="fas fa-plus"></i> Add Meal</button>
+            <!-- <button class="btn btn-info"><i class="far fa-edit"></i> Update Meal</button>
+            <button class="btn btn-info"><i class="fas fa-ban"></i> Delete Meal</button> -->
+            <button class="btn btn-info"><i class="fas fa-chevron-circle-left"></i> back</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- List -->
+  <div class="container mt-4">
+    <h2 class="page-heading text-center mb-3">Total Calories: <span class="total-calories">0</span></h2>
+    <ul class="list-group" id='item-list'>
+      <!-- <li class="list-group-item">
+        <strong>Eggs: <em>200 calories</em></strong>
+        <div class="float-right">
+            <a href="#" class=""><i class="fas fa-pencil-alt"></i></a>
+        </div>
+      </li>
+      <li class="list-group-item">
+        <strong>Eggs: <em>200 calories</em></strong>
+        <div class="float-right">
+            <a href="#" class=""><i class="fas fa-pencil-alt"></i></a>
+        </div>
+      </li>
+      <li class="list-group-item">
+          <strong>Eggs: <em>200 calories</em></strong>
+          <div class="float-right">
+              <a href="#" class=""><i class="fas fa-pencil-alt"></i></a>
+          </div>
+        </li> -->
+    </ul>
+  </div>
+  
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
